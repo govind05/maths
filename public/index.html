@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Maths for Kids</title>
+</head>
+
+<body>
+  <div class="container">
+    <div><div class='nav'>
+      <ul>
+        <li id='addBtn' class="active">Addition(+)</li>
+        <li id='subtractBtn'>Subtraction(-)</li>
+      </ul>
+    </div>
+    <div class="result">
+      <ul>
+        <li>Correct Answers:
+          <span id='correct'></span>
+        </li>
+        <li>Wrong Answers:
+          <span id='wrong'></span>
+        </li>
+      </ul>
+    </div></div>
+    <hr>
+    <div class="math" id='add'>
+      <p style="text-align:center; font-size: 50px">Add</p>
+      <div class='circles' id='addDiv1'>
+        <div id='addCircle1' class="circle"></div>
+      </div>
+      <p style="font-size: 50px; padding-left: 10px">+</p>
+      <div class='circles' id='addDiv2'>
+        <div id='addCircle2' class="circle"></div>
+      </div>
+      <p style="font-size: 50px; padding-left: 10px">=</p>
+      <p id='addResult' >Enter Your Answer:</p>
+      <div>
+        <input class="input" type="number" placeholder="Total Circles" id="addInput" />
+        <input type="button" class='submit' value="Check Answer" id="addSubmit" />
+        <input type="button" class='submit' value="Next Question" id="addNext" />
+      </div>
+    </div>
+    
+    <div class="math" id='subtract'>
+      <p style="text-align:center; font-size: 50px">Subtract</p>
+      <div class='circles' id='subtractDiv1'>
+        <div id='subtractCircle1' class="circle"></div>
+      </div>
+      <p style="font-size: 50px; padding-left: 10px">-</p>
+      <div class='circles' id='subtractDiv2'>
+        <div id='subtractCircle2' class="circle"></div>
+      </div>
+      <p style="font-size: 50px; padding-left: 10px">=</p>
+      <p id='subtractResult'>Enter Your Answer:</p>
+      <div class="inputs">
+        <input class="input" type="number" placeholder="Remaining Circles" id="subtractInput" />
+        <input type="button" class='submit' value="Check Answer" id="subtractSubmit" />
+        <input type="button" class='submit' value="Next Question" id="subtractNext" />
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
